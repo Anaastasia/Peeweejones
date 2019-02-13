@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" href="smalllogo.ico">
+	
+	<title>NihonEats | Japanese Food Delivery</title>
+	
+	<!--css-->
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" async></script>
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	</head>
+		
+	<body> 
+	
+	<header>
+    <div class="containera">
+      <a class="logo" href="index.html"><img src="logo.png" width="120" height="120" alt="" title="NihonEats"></a>
+      <nav>
+	  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="Restaurant.html">Restaurants</a></li>
+		  <!-- <li><a href="cart.html">Cart</a></li> -->
+          <li><a href="Delivery.html">Delivery</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+		  <li><button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+        </ul>
+		  </div>
+</div>
+      </nav>
+	  <span class="hamburg" onclick="openNav()">&#9776;</span>
+	  <button class="loginr" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    </div>
+	<div id="id01" class="modal">
+  
+     <form class="modal-content animate" action="/action_page.php">
+     <div class="imgcontainer">
+     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="">&times;</span>
+     <img src="avatar.png" width="150" height="150" alt="Avatar" class="avatar">
+     </div>
+
+     <div class="container">
+     <label ><b>Username</b></label>
+     <input type="text" placeholder="Enter Username" name="uname" required>
+
+     <label ><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="psw" required>
+        
+     <button id="submit" type="submit">Login</button>
+     </div>
+
+     <div class="container" style="background-color:#f1f1f1">
+     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	 <span class="psw"><a href="form.html">Sign Up</a></span>
+    </div>
+  </form>	
+</div>
+  </header>
+  
+  
+   <h2 class="headwords">Ichiban Boshi</h2>
+ <p class="headwordsdescrip">Click add to cart!</p>
+ <button class="shop" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Cart</button>
+ 	<div id="id02" class="modal">
+	
+	
+  <form class="modal-content animate" action="Delivery.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="">&times;</span>
+      <img src="cart.png" width="100" height="100" alt="Avatar" class="avatar">
+	  <h2 id="cartadd">Cart</h2>
+	  <h3>Click add to cart to add items into cart!</h3>
+	  <div id="cartList">
+	  
+	  </div>
+	  
+	  
+    </div>
+
+	  <input type="submit" class="checkout" value="Checkout">
+  </form>
+  </div>
+
+  <hr>
+  
+  <div class="foodcarry">
+	<div class="contain">
+	<ul><li><a href=#><img src="vegesushi.png" width="300" height="225" alt="" title="Vegetable Sushi"></a></li>
+	<li><h3 id="item1t">Vegetarian Sushi</h3></li>
+	<li class="descrip" id="item1d"> Cucumber & Fruits Sushi </li>
+	<li id="item1p"> $4.50/6pc </li>
+	
+	<li> <form class="spacetest">
+	  <button class="cart" type="button" id="item1" onclick="addToCart(this.id)"> Add to cart </button>
+	  </form> </li>
+	</ul>
+	</div>
+	
+	<div class="contain">
+	<ul><li><a href=#><img src="ichibansashimi.png" width="300" height="225" alt="" title="Salmon Sashimi"></a></li>
+	<li><h3 id="item2t">Salmon Sashimi</h3></li>
+	<li class="descrip" id="item2d"> Fresh Salmon Sashimi </li>
+	<li id="item2p"> $6/4pc </li>
+	
+	<li> <form class="spacetest">
+	  <button class="cart" type="button" id="item2" onClick="addToCart(this.id)"> Add to cart </button>
+	  </form> </li>
+	</ul>
+	</div>
+	
+	<div class="contain">
+	<ul><li><a href=#><img src="ichibanbento.png" width="300" height="225" alt="" title="Salmon Bento"></a></li>
+	<li><h3 id="item3t">Salmon Bento</h3></li>
+	<li class="descrip" id="item3d"> Fried Salmon Bento </li>
+	<li> $13.50 </li>
+	
+	<li> <form class="spacetest">
+	  <button class="cart" type="button" id="item3" onclick="addToCart(this.id)"> Add to cart </button>
+	  </form></li>
+	</ul>
+	</div>
+	
+	<div class="contain">
+	<ul><li><a href=#><img src="sashimispread.jpg" width="300" height="225" alt="" title="Sashimi Spread"></a></li>
+	<li><h3 id="item4t">Sashimi Spread</h3></li>
+	<li class="descrip" id="item4d"> Tuna,Salmon,Crab,Various Fish </li>
+	<li> $32.20/set </li>
+
+	<li> <form class="spacetest">
+	  <button class="cart" type="button" id="item4" onclick="addToCart(this.id)"> Add to cart </button>
+	  </form> </li>
+	</ul>
+	</div>
+	
+	<div class="contain">
+	<ul><li><a href=#><img src="lunchSet1.jpg" width="300" height="225" alt="" title="Lunch Set"></a></li>
+	<li><h3 id="item5t">Lunch Set</h3></li>
+	<li class="descrip" id="item5d"> Katsu-don & Seafood Nabe </li>
+	<li> $15.90 </li>
+	
+	<li> <form class="spacetest">
+	  <button class="cart" type="button" id="item5" onclick="addToCart(this.id)"> Add to cart </button>
+	  </form> </li>
+	</ul>
+	</div>
+	
+	<div class="contain">
+	<ul><li><a href=#><img src="mentaibento.jpg" width="300" height="225" alt="" title="Mentai Bento"></a></li>
+	<li><h3 id="item6t">Mentaiyaki Don</h3></li>
+	<li class="descrip" id="item6d"> Mentai-sauced salmon </li>
+	<li> $7.90</li>
+	
+	<li> <form class="spacetest">
+	  <button class="cart" type="button" id="item6" onclick="addToCart(this.id)"> Add to cart </button>
+	  </form> </li>
+	</ul>
+	</div>
+  </div>
+
+  
+<footer>
+<p class="email"><img src="redmail.png" width="35" height="35" alt="" title="">
+<a class="textemail" href="mailto:support@nihoneats.com">Support@NihonEats.com</a></p>
+<p class="telepic"><img src="pinktelephone.png" width="30" height="30" alt="" title="">
+<a class="textemail">(+65)9012 3456</a></p>
+<ul class="comms">
+<li><a href="https://www.facebook.com/"><img src="redfacebook.png" width="30" height="30" alt="" title=""></a></li>
+<li><a href="https://www.instagram.com/?hl=en"><img src="redinstagram.png" width="30" height="30" alt="" title=""></a></li>
+<li><a href="https://twitter.com/"><img src="redtwitter.png" width="30" height="30" alt="" title=""></a></li>
+</ul>
+<p id="endtext">Copyright © 2019 NihonEats. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

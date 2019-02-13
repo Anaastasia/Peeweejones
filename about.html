@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" href="smalllogo.ico">
+	
+	<title>NihonEats | Japanese Food Delivery</title>
+	
+	<!--css-->
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" async></script>
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	</head>
+		
+	<body> 
+	
+	<header>
+    <div class="containera">
+      <a class="logo" href="index.html"><img src="logo.png" width="120" height="120" alt="" title="NihonEats"></a>
+      <nav>
+	  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="Restaurant.html">Restaurants</a></li>
+		  <!-- <li><a href="cart.html">Cart</a></li> -->
+          <li><a href="Delivery.html">Delivery</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+		  <li><button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+        </ul>
+		  </div>
+</div>
+      </nav>
+	  <span class="hamburg" onclick="openNav()">&#9776;</span>
+	  <button class="loginr" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    </div>
+	<div id="id01" class="modal">
+  
+     <form class="modal-content animate" action="/action_page.php">
+     <div class="imgcontainer">
+     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="">&times;</span>
+     <img src="avatar.png" width="150" height="150" alt="Avatar" class="avatar">
+     </div>
+
+     <div class="container">
+     <label ><b>Username</b></label>
+     <input type="text" placeholder="Enter Username" name="uname" required>
+
+     <label ><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="psw" required>
+        
+     <button id="submit" type="submit">Login</button>
+     </div>
+
+     <div class="container" style="background-color:#f1f1f1">
+     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	 <span class="psw"><a href="form.html">Sign Up</a></span>
+    </div>
+  </form>	
+</div>
+  </header>
+  
+   <h2 class="headwords">About Us</h2>
+  <hr>
+  
+  
+  <div class="textchunk">
+  <p class="headwords">Our Motto:</p>
+  <p class="headwordsdescrip">Deliver the finest</p>
+  <hr id="smallline">
+  </div>
+  
+   <div class="textspace">
+   <div class="description">
+   <h1>NihonEats's story</h1>
+   
+   <img id="egg" src="eggrice.png" width="750" height="500" alt="" title="">
+
+<div class="textplacer">
+<p class="spacing">When NihonEats' founder Soh Yee Chuan went to Japan in 2016 he discovered a wonderland of food.</p>
+<p class="spacing">He was astounded that Japan didnt have much food delivery services.</p>
+<p class="spacing">When he went back to Singapore, he made his motto to deliver the best Japanese food direct to people's doors.</p>
+</div>
+<hr>
+
+</div>
+</div>
+  
+<footer>
+<p class="email"><img src="redmail.png" width="35" height="35" alt="" title="">
+<a class="textemail" href="mailto:support@nihoneats.com">Support@NihonEats.com</a></p>
+<p class="telepic"><img src="pinktelephone.png" width="30" height="30" alt="" title="">
+<a class="textemail">(+65)9012 3456</a></p>
+<ul class="comms">
+<li><a href="https://www.facebook.com/"><img src="redfacebook.png" width="30" height="30" alt="" title=""></a></li>
+<li><a href="https://www.instagram.com/?hl=en"><img src="redinstagram.png" width="30" height="30" alt="" title=""></a></li>
+<li><a href="https://twitter.com/"><img src="redtwitter.png" width="30" height="30" alt="" title=""></a></li>
+</ul>
+<p id="endtext">Copyright © 2019 NihonEats. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

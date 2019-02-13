@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" href="smalllogo.ico">
+	
+	<title>NihonEats | Japanese Food Delivery</title>
+	
+	<!--css-->
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" async></script>
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	</head>
+		
+	<body> 
+	
+	<header>
+    <div class="containera">
+      <a class="logo" href="index.html"><img src="logo.png" width="120" height="120" alt="" title="NihonEats"></a>
+      <nav>
+	  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="Restaurant.html">Restaurants</a></li>
+		  <!-- <li><a href="cart.html">Cart</a></li> -->
+          <li><a href="Delivery.html">Delivery</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+		  <li><button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+        </ul>
+		  </div>
+</div>
+      </nav>
+	  <span class="hamburg" onclick="openNav()">&#9776;</span>
+	  <button class="loginr" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    </div>
+	<div id="id01" class="modal">
+  
+     <form class="modal-content animate" action="/action_page.php">
+     <div class="imgcontainer">
+     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="">&times;</span>
+     <img src="avatar.png" width="150" height="150" alt="Avatar" class="avatar">
+     </div>
+
+     <div class="container">
+     <label ><b>Username</b></label>
+     <input type="text" placeholder="Enter Username" name="uname" required>
+
+     <label ><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="psw" required>
+        
+     <button id="submit" type="submit">Login</button>
+     </div>
+
+     <div class="container" style="background-color:#f1f1f1">
+     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	 <span class="psw"><a href="form.html">Sign Up</a></span>
+    </div>
+  </form>	
+</div>
+  </header>
+  
+  <article id="contentstart">
+         <div class="containerfeedback">
+            <h2>Feedback to Us</h2>
+             <form action="results.html">
+                 <fieldset class="contactinfo">
+                     <legend>Contact Information</legend>
+                     <label for="nameinput">
+                         Name
+                         <input type="text" name="Name " id="nameinput" placeholder="First and last name" required />
+                     </label>
+                     <label for="emailinput">
+                         Email
+                         <input type="email" name="Email " id="emailinput" placeholder="address@example.com" required />
+                     </label>
+                     <label for="phoneinput">
+                         Phone
+                         <input type="tel" name="Phone " id="phoneinput" placeholder="eg.9012 3456" required />
+                     </label>
+                 </fieldset>
+
+                     <fieldset class="schedule">
+                         <legend>Order Info.</legend>
+
+                         <!-- Additional for learning -->
+                         <label for="ordercount">
+                            Number of orders
+                            <input type="number" name="Orders" id="ordercount" min="1" max="100" />
+                         </label>
+
+                         <div class="date-picker">
+                             <label for="order-month">Order Month</label>
+                             <select id="order-month" name="Order Month">
+                                 <option value="01">Jan</option>
+                                 <option value="02">Feb</option>
+                                 <option value="03">Mar</option>
+								 <option value="04">Apr</option>
+								 <option value="05">May</option>
+								 <option value="06">Jun</option>
+								 <option value="07">Jul</option>
+								 <option value="08">Aug</option>
+								 <option value="09">Sep</option>
+								 <option value="10">Oct</option>
+								 <option value="11">Nov</option>
+								 <option value="12">Dec</option>
+                             </select>
+                             <label for="order-day">Order Day</label>
+                             <select id="order-day" name="Order Day">
+                                 <option value="01">1</option>
+                                 <option value="02">2</option>
+                                 <option value="03">3</option>
+								 <option value="04">4</option>
+								 <option value="05">5</option>
+								 <option value="06">6</option>
+								 <option value="07">7</option>
+								 <option value="08">8</option>
+								 <option value="09">9</option>
+								 <option value="10">10</option>
+								 <option value="11">11</option>
+								 <option value="12">12</option>
+								 <option value="13">13</option>
+								 <option value="14">14</option>
+								 <option value="15">15</option>
+								 <option value="16">16</option>
+								 <option value="17">17</option>
+								 <option value="18">18</option>
+								 <option value="19">19</option>
+								 <option value="20">20</option>
+								 <option value="21">21</option>
+								 <option value="22">22</option>
+								 <option value="23">23</option>
+								 <option value="24">24</option>
+								 <option value="25">25</option>
+								 <option value="26">26</option>
+								 <option value="27">27</option>
+								 <option value="28">28</option>
+								 <option value="29">29</option>
+								 <option value="30">30</option>
+								 <option value="31">31</option>
+                             </select>
+                             <label for="order-year">Order Year</label>
+                             <select id="order-year" name="Order Year">
+							     <option value="2002">2020</option>
+                                 <option value="2000">2018</option>
+                                 <option value="2001">2019</option>
+                             </select>
+                         </div>
+
+                         <label for="date">
+                             Date (Other MTD)
+                             <input type="date" name="Date" id="date" />
+                         </label>
+                     </fieldset>
+
+                     <fieldset class="restaurantinfo">
+                         <legend>Restaurants Ordered from</legend>
+                         <label for="ichibanboshi">
+                             <input type="checkbox" id="ichibanboshi" value="Ichiban Boshi" name="Order" />
+                             Ichiban Boshi
+                         </label>
+                         <label for="Keisuke">
+                             <input type="checkbox" id="Keisuke" value="Keisuke Ramen" name="Order" />
+                             Keisuke Ramen
+                         </label>
+                         <label for="Ajisen">
+                             <input type="checkbox" id="Ajisen" value="Ajisen Ramen" name="Order" />
+                             Ajisen Ramen
+                         </label>
+                         <label for="sushitei">
+                             <input type="checkbox" id="sushitei" value="Sushi Tei" name="Order" />
+                             Sushi Tei
+                         </label>
+						 <label for="yoshinoya">
+                             <input type="checkbox" id="yoshinoya" value="Yoshinoya" name="Order" />
+                             Yoshinoya
+                         </label>
+						 <label for="sakae">
+                             <input type="checkbox" id="sakae" value="Sakae Sushi" name="Order" />
+                             Sakae Sushi
+                         </label>
+						 <label for="nagi">
+                             <input type="checkbox" id="nagi" value="Ramen Nagi" name="Order" />
+                             Ramen Nagi
+                         </label>
+						 <label for="akira">
+                             <input type="checkbox" id="akira" value="Akira Back" name="Order" />
+                             Akira Back
+                         </label>
+						 <label for="unagi">
+                             <input type="checkbox" id="unagi" value="Unagiya Ichinoji" name="Order" />
+                             Unagiya Ichinoji
+                         </label>
+                     </fieldset>
+
+                     <fieldset class="occasioninfo">
+                         <legend>What's the occasion for your visit?</legend>
+                         <label for="vacation">
+                             <input type="radio" name="Occasion" id="vacation" value="General Order" checked />
+                             General Order
+                         </label>
+                         <label for="celebration">
+                             <input type="radio" name="Occasion" id="celebration" value="Party Order" />
+                             Party Order
+                         </label>
+                         <label for="event">
+                             <input type="radio" name="Occasion" id="event" value="Coporate Order" />
+                             Corporate Order
+                         </label>
+                     </fieldset>
+
+
+                 <fieldset class="additionalinfo">
+                     <legend>Feedback wanted to submit</legend>
+                     <label for="feedback">
+                         Feedback to be given
+                         <textarea name="Feedback" id="feedback" rows="3" cols="40" required >
+                         </textarea>
+                     </label>
+                 </fieldset>
+            
+                     <input type="submit" class="submitfeedback" value="Submit" >
+                     <input type="reset" class="submitfeedback" />
+             </form>
+         </div>
+      </article>
+	  
+	  
+	  
+	  
+
+ <footer>
+<p class="email"><img src="redmail.png" width="35" height="35" alt="" title="">
+<a class="textemail" href="mailto:support@nihoneats.com">Support@NihonEats.com</a></p>
+<p class="telepic"><img src="pinktelephone.png" width="30" height="30" alt="" title="">
+<a class="textemail">(+65)9012 3456</a></p>
+<ul class="comms">
+<li><a href="https://www.facebook.com/"><img src="redfacebook.png" width="30" height="30" alt="" title=""></a></li>
+<li><a href="https://www.instagram.com/?hl=en"><img src="redinstagram.png" width="30" height="30" alt="" title=""></a></li>
+<li><a href="https://twitter.com/"><img src="redtwitter.png" width="30" height="30" alt="" title=""></a></li>
+</ul>
+<p id="endtext">Copyright © 2019 NihonEats. All rights reserved.</p>
+</footer>	
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

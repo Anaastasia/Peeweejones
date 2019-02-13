@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" href="smalllogo.ico">
+	
+	<title>NihonEats | Japanese Food Delivery</title>
+	
+	<!--css-->
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" async></script>
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	</head>
+		
+	<body> 
+	
+	<header>
+    <div class="containera">
+      <a class="logo" href="index.html"><img src="logo.png" width="120" height="120" alt="" title="NihonEats"></a>
+      <nav>
+	  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="Restaurant.html">Restaurants</a></li>
+		  <!-- <li><a href="cart.html">Cart</a></li> -->
+          <li><a href="Delivery.html">Delivery</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+		  <li><button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+        </ul>
+		  </div>
+</div>
+      </nav>
+	  <span class="hamburg" onclick="openNav()">&#9776;</span>
+	  <button class="loginr" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    </div>
+	<div id="id01" class="modal">
+  
+     <form class="modal-content animate" action="/action_page.php">
+     <div class="imgcontainer">
+     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="">&times;</span>
+     <img src="avatar.png" width="150" height="150" alt="Avatar" class="avatar">
+     </div>
+
+     <div class="container">
+     <label ><b>Username</b></label>
+     <input type="text" placeholder="Enter Username" name="uname" required>
+
+     <label ><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="psw" required>
+        
+     <button id="submit" type="submit">Login</button>
+     </div>
+
+     <div class="container" style="background-color:#f1f1f1">
+     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	 <span class="psw"><a href="form.html">Sign Up</a></span>
+    </div>
+  </form>	
+</div>
+  </header>
+  
+  
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="foodgalore.jpg" alt="" style="width:100%">
+  <div class="text">Best Japanese Food in Singapore!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="unagibento.jpg" alt="" style="width:100%">
+  <div class="text">Delicious Japanese Food</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="foodgalore3.jpg" alt="" style="width:100%">
+  <div class="text">Delivered right to your doorstep!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="okonomiyaki.jpg" alt="" style="width:100%">
+  <div class="text">All the food were made with love and care!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="takoyaki.jpg"  alt="" style="width:100%">
+  <div class="text">You'd love to see it!</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+
+<section class="textspace">
+<div class="description">
+<h1 class="spacing">NihonEats</h1>
+<h4>Japanese Food Delivery Service</h4>
+
+<div class="textplacer">
+
+<p class="spacing">We provide customers only the best service available</p>
+<p class="spacing">The finest selection of Japanese delicacies only from specially selected restaurants</p>
+<p class="spacing">Founded in 2018, our riders dedicate their time and effort for your finest experience</p>
+
+</div>
+
+<figure id="foodarray">
+	<img src="foodarray1.jpg" width="200" height="200" alt="" title="">
+	<img src="foodarray2.jpg" width="200" height="200" alt="" title="">
+	<img src="foodarray3.jpg" width="200" height="200" alt="" title="">
+	<img src="foodarray4.jpg" width="200" height="200" alt="" title="">
+</figure>
+<div class="textplacer">
+<p class="spacing"> With about 300 riders and 9 dedicated restaurants, NihonEats will deliver the best</p>
+<p class="spacing"> NihonEats Slogan would thus be Deliver the Finest</p>
+<hr id="hr">
+</div>
+</div>
+</section>
+
+<footer>
+<p class="email"><img src="redmail.png" width="35" height="35" alt="" title="">
+<a class="textemail" href="mailto:support@nihoneats.com">Support@NihonEats.com</a></p>
+<p class="telepic"><img src="pinktelephone.png" width="30" height="30" alt="" title="">
+<a class="textemail">(+65)9012 3456</a></p>
+<ul class="comms">
+<li><a href="https://www.facebook.com/"><img src="redfacebook.png" width="30" height="30" alt="" title=""></a></li>
+<li><a href="https://www.instagram.com/?hl=en"><img src="redinstagram.png" width="30" height="30" alt="" title=""></a></li>
+<li><a href="https://twitter.com/"><img src="redtwitter.png" width="30" height="30" alt="" title=""></a></li>
+</ul>
+<p id="endtext">Copyright © 2019 NihonEats. All rights reserved.</p>
+</footer>	
+
+</body>
+</html>
+
+
+
+
